@@ -28,7 +28,7 @@ async def get_all_reviews(db: AsyncSession = Depends(get_async_db)):
     return reviews
 
 
-@router.get("products/{product_id}/", response_model=list[ReviewSchema])
+@router.get("/products/{product_id}/", response_model=list[ReviewSchema])
 async def get_all_reviews_of_product(product_id: int, db: AsyncSession = Depends(get_async_db)):
     """
     Возвращает список отзывов указанного товара.
