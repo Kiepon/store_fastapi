@@ -4,3 +4,4 @@ venv/
 ecommerce.db
 migrations/
 alembic.ini
+info.log
